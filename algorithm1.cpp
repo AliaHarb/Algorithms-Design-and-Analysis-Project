@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 long long brute_force(const vector<long long>& k, long long t) {
@@ -20,8 +21,22 @@ long long brute_force(const vector<long long>& k, long long t) {
 }
 
 int main() {
-    vector<long long> k = {2, 3, 7};
-    long long t = 10;
-    cout << brute_force(k, t);
+    int n;
+    long long t;
+    cout << "Enter number of machines: ";
+    cin >> n;
+    
+    cout << "Enter target number of products: ";
+    cin >> t;
+    
+    vector<long long> k(n);  
+    cout << "Enter production time for each machine: ";
+    for(int i=0;i<n;i++){
+        cin >> k[i];
+    }
+
+    long long result = brute_force(k, t); 
+    cout << "Minimum time required: " << result << " seconds" << endl;
+
     return 0;
 }
