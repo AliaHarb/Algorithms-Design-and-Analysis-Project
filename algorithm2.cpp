@@ -1,5 +1,7 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
+
 
 bool can(long long time, const vector<long long>& k, long long t) {
     long long total = 0;
@@ -9,6 +11,7 @@ bool can(long long time, const vector<long long>& k, long long t) {
     }
     return false;
 }
+
 
 long long binary_search_solution(const vector<long long>& k, long long t) {
     long long l = 1, r = 1e18, ans = -1;
@@ -25,9 +28,24 @@ long long binary_search_solution(const vector<long long>& k, long long t) {
     return ans;
 }
 
-int main() {
-    vector<long long> k = {2, 3, 7};
-    long long t = 10;
-    cout << binary_search_solution(k, t);
+int main()
+{
+    int n;
+    long long t;
+    cout << "Enter number of machines: ";
+    cin >> n;
+
+    cout << "Enter target number of products: ";
+    cin >> t;
+
+    vector<long long> k(n);
+    cout << "Enter production time for each machine: ";
+    for (int i = 0; i < n; i++) {
+        cin >> k[i];
+    }
+
+    long long result = binary_search_solution(k, t);
+    cout << "Minimum time required: " << result << " seconds" << endl;
+
     return 0;
 }
