@@ -114,9 +114,6 @@ g++ algorithm2.cpp -o algorithm2
 * <span style="color:green"><b>Note:</b></span> Binary search is **efficient** and suitable for **large datasets**
 * Always test with multiple inputs for accuracy
 
-```
-
---- 
 
 
 
