@@ -1,4 +1,5 @@
 
+```markdown
 # Algorithms Design and Analysis Project
 
 **Project:** Naive vs Optimized Solutions for Machine Production Problem  
@@ -10,6 +11,21 @@
 
 * **Alia Mahmoud**  
 * **Shahd Ayman**  
+
+---
+
+## Project Structure
+
+```
+
+Algorithms-Design-and-Analysis-Project/
+├── algorithm1.cpp
+├── algorithm2.cpp
+├── README.md
+└── report/
+└── Algorithm_Analysis_Report.pdf
+
+````
 
 ---
 
@@ -114,6 +130,6 @@ g++ algorithm2.cpp -o algorithm2
 * <span style="color:green"><b>Note:</b></span> Binary search is **efficient** and suitable for **large datasets**
 * Always test with multiple inputs for accuracy
 
-
+```
 
 
