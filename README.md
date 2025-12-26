@@ -118,5 +118,5 @@ g++ algorithm2.cpp -o algorithm2
 
 --- 
 
-تحبي أعملها؟
-```
+
+
